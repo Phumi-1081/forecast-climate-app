@@ -10,16 +10,16 @@
   <div class="weather-app-container">
   <body>
 <header>
-    <div class="button">
-    <input type="text" name="box" placeholder="Enter a city...">
-    <a href="#"><i class="material-symbols-outlined">Search</i></a></div>
+    <form class="button" id="search-form">
+    <input type="text" name="box" placeholder="Enter a city..." required class="search-input" id="search-input">
+    <a href="#"><i class="material-symbols-outlined">Search</i></a></form>
 </header>
 <main>
     <div class="app-data">
-        <h1 class="app-city">Pretoria</h1>
+        <h1 class="app-city" id="city">Pretoria</h1>
         <div class="weather-details">
-            <div class="icon"></div>
-            <div class="app-temperature"></div>
+            <div class="icon" id="icon"></div>
+            <div class="app-temperature" id="app-temp"></div>
             <div class="app-unit">℃</div>
             <p class="app-details">
                 <span id="time"></span>
@@ -28,57 +28,11 @@
                 Humidity: <strong id="humidity"></strong>, Wind: <strong id="wind-speed"></strong>
             </p>
         </div>
-        <div class="app-forecast">
-            <div class="daily-forecast">
-                <div class="forecast-date">Wed</div>
-                <div class=" forecast-icon">⛅</div>
-                <div class="forecast-temperatures">
-                    <div class="daily-temp"><strong>15℃</strong></div>
-                <div class="daily-temp"><strong>9℃</strong></div>
-                </div>
+        <div class="app-forecast" id="forecast">
             </div>
-            
-            <div class="daily-forecast">
-                <div class="forecast-date">Wed</div>
-                <div class=" forecast-icon">⛅</div>
-                <div class="forecast-temperatures">
-                    <div class="daily-temp"><strong>15℃</strong></div>
-                <div class="daily-temp"><strong>9℃</strong></div>
-                </div>
-            </div>
-                
-              <div class="daily-forecast">
-                <div class="forecast-date">Wed</div>
-                <div class=" forecast-icon">⛅</div>
-                <div class="forecast-temperatures">
-                    <div class="daily-temp"><strong>15℃</strong></div>
-                <div class="daily-temp"><strong>9℃</strong></div>
-                </div>
-                </div>
-
-                
-            <div class="daily-forecast">
-                <div class="forecast-date">Wed</div>
-                <div class=" forecast-icon">⛅</div>
-                <div class="forecast-temperatures">
-                    <div class="daily-temp"><strong>15℃</strong></div>
-                <div class="daily-temp"><strong>9℃</strong></div>
-                </div>
-            </div>
-            
-           <div class="daily-forecast">
-                <div class="forecast-date">Wed</div>
-                <div class=" forecast-icon">⛅</div>
-                <div class="forecast-temperatures">
-                    <div class="daily-temp"><strong>15℃</strong></div>
-                <div class="daily-temp"><strong>9℃</strong></div>
-                </div>
-           </div>
-            
-            </div>
-    </div>
-</main>
+ <main>
 <footer> This project was coded by:<a href="" target="_blank">Phumzile Sibanyone</a>, is <a href="" target="_blank">open-sourced on Github</a> and <a href="" target="_blank">hosted on Netlify</a></footer>
   </div>
+  <script src="magic.js"></script>
 </body>
 </html>
