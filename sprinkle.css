@@ -34,11 +34,17 @@ input {
   border: none;
   outline: none;
 }
+button {
+  border: none;
+  background-color: transparent;
+}
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
   display: inline-block;
   font-size: 15px;
-  margin-top: 20px;
+  margin-top: 10px;
+  color: #49a0a1;
+  margin-left: 10px;
 }
 
 header {
